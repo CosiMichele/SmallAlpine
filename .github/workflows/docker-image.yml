@@ -3,10 +3,10 @@ name: Docker Image Small Alpine
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
     tags:
       - 'v*'
+  pull_request:
+    branches: [ main ]
 
 jobs:
 
@@ -31,4 +31,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale
