@@ -31,4 +31,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:v0.2
